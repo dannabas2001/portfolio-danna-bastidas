@@ -109,7 +109,7 @@ export const content = {
           title: 'SB Construcciones',
           description: "Construction company site with an admin module to create and manage property listings.",
           stack: ['React', 'JavaScript', 'CSS'],
-          url: 'https://sbconstrucciones.vercel.app/',
+          url: 'https://sybconstrucciones.com.co/',
           thumb: '/projects/sbconstrucciones.jpg',
         },
         {
@@ -252,7 +252,7 @@ export const content = {
           title: 'SB Construcciones',
           description: 'Sitio para una constructora, con módulo de administración para crear y gestionar propiedades.',
           stack: ['React', 'JavaScript', 'CSS'],
-          url: 'https://sbconstrucciones.vercel.app/',
+          url: 'https://sybconstrucciones.com.co/',
           thumb: '/projects/sbconstrucciones.jpg',
         },
         {

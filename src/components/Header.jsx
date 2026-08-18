@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export default function Header({ t, lang, onToggleLang }) {
+export default function Header({ t, lang, onSetLang }) {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
@@ -20,15 +20,25 @@ export default function Header({ t, lang, onToggleLang }) {
           <a href="#skills" className="nav__link" onClick={() => setOpen(false)}>{t.nav.skills}</a>
           <a href="#projects" className="nav__link" onClick={() => setOpen(false)}>{t.nav.projects}</a>
           <a href="#contact" className="nav__link" onClick={() => setOpen(false)}>{t.nav.contact}</a>
-          <button className="lang-toggle lang-toggle--mobile" onClick={onToggleLang}>
-            {lang === 'en' ? 'ES' : 'EN'}
-          </button>
         </nav>
 
         <div className="header__actions">
-          <button className="lang-toggle" onClick={onToggleLang} aria-label="Switch language">
-            {lang === 'en' ? 'ES' : 'EN'}
-          </button>
+          <div className="lang-switch" role="group" aria-label="Language">
+            <button
+              type="button"
+              className={`lang-switch__option ${lang === 'en' ? 'is-active' : ''}`}
+              onClick={() => onSetLang('en')}
+            >
+              EN
+            </button>
+            <button
+              type="button"
+              className={`lang-switch__option ${lang === 'es' ? 'is-active' : ''}`}
+              onClick={() => onSetLang('es')}
+            >
+              ES
+            </button>
+          </div>
           <button
             className="nav-toggle"
             aria-label="Toggle menu"
