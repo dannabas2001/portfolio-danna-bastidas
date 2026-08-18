@@ -6,5 +6,5 @@ import react from '@vitejs/plugin-react'
 // antes de publicar en GitHub Pages (ver README.md).
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: './portfolio-dannabastidas',
 })
